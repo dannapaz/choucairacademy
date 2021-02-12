@@ -12,6 +12,11 @@ public class Login implements Task {
     private String strUser;
     private String strPassword;
 
+    public Login(String strUser, String strPassword) {
+        this.strUser = strUser;
+        this.strPassword = strPassword;
+    }
+
     public static Login OnThePage(String strUser, String strPassword){
         return Tasks.instrumented(Login.class,strUser,strPassword);
     }
@@ -23,7 +28,5 @@ public class Login implements Task {
                 Enter.theValue(strPassword).into(ChoucairLoginPage.INPUT_PASSWORD),
                 Click.on(ChoucairLoginPage.ENTER_BUTTON)
         );
-
-
     }
 }
