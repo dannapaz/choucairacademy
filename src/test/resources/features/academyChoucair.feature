@@ -8,7 +8,7 @@
       |1085331400|Choucair2021*|
     When she search for the course on the choucair academy platform
       |strCourse         |
-      |Patrones de Automatizacion|
+      |Patrones de Automatización|
     Then she finds the course called resources
       |strCourse         |
-      |Patrones de Automatizacion|
+      |Patrones de Automatización|
