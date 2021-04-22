@@ -14,6 +14,7 @@ public class SearchCoursePage extends PageObject {
             .located(By.xpath("//button[contains(text(),'Ir')]"));
     public static final Target SELECT_COURSE= Target.the("Click to search course")
            .located(By.xpath("/html/body/div[2]/div[2]/div/div/div/section/div/div/div[1]/h4/a"));
+
    public static final Target NAME_COURSE=Target.the("Extract the course name")
             .located(By.xpath("//*[@id='page-header']/div/div/div[2]/div[1]/div[1]/a/div/div/h1"));
 
